@@ -1,0 +1,27 @@
+﻿빌드 시작: 2013-05-31 오전 4:18:37
+     1>2 노드의 "C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\CumulativePowerAnalyzer\CumulativePowerAnalyzer.vcxproj" 프로젝트(rebuild 대상)입니다.
+     1>_PrepareForClean:
+         "Debug\CumulativePowerAnalyzer.lastbuildstate" 파일을 삭제하고 있습니다.
+       InitializeBuildStatus:
+         "Debug\CumulativePowerAnalyzer.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CumulativePowerAnalyzer.cpp
+         CumulativePowerAnalyzer.cpp
+     1>c:\users\showsense\desktop\cumulativepoweranalyzer\cumulativepoweranalyzer\cumulativepoweranalyzer.cpp(18): warning C4700: 초기화되지 않은 'readings' 지역 변수를 사용했습니다.
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CumulativePowerAnalyzer.exe.embed.manifest.res" Debug\CumulativePowerAnalyzer_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\Debug\CumulativePowerAnalyzer.exe" /INCREMENTAL /NOLOGO Ag34405.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CumulativePowerAnalyzer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\Debug\CumulativePowerAnalyzer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\Debug\CumulativePowerAnalyzer.lib" /MACHINE:X86 Debug\CumulativePowerAnalyzer.exe.embed.manifest.res
+         Debug\CumulativePowerAnalyzer.obj
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viClose@4 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viQueryf 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viScanf 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viPrintf 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viOpen@20 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>CumulativePowerAnalyzer.obj : error LNK2019: _viOpenDefaultRM@4 외부 기호(참조 위치: _main 함수)에서 확인하지 못했습니다.
+     1>C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\Debug\CumulativePowerAnalyzer.exe : fatal error LNK1120: 6개의 확인할 수 없는 외부 참조입니다.
+     1>"C:\Users\Showsense\Desktop\CumulativePowerAnalyzer\CumulativePowerAnalyzer\CumulativePowerAnalyzer.vcxproj" 프로젝트를 빌드했습니다(rebuild 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.26

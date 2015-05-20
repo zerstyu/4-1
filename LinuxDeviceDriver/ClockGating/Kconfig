@@ -1,0 +1,16 @@
+#
+# ClockGating configuration
+# D.C. LEE. in H.U.F.S
+#
+
+menuconfig CLKGATING
+	boolean "ClockGatingDrv"
+
+if CLKGATING
+
+config EXYNOS4210_CLKGATEDRV
+	tristate "EXYNOS4210_ClockGatingDrv"
+#	help
+#		This Configuration is enable to Clock-Gating Methods for EXYNOS4210
+
+endif

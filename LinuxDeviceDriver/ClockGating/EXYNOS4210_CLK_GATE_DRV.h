@@ -1,0 +1,52 @@
+////////////////////////////////////////////////////////////////////////
+//																	  //
+//	This Driver is operated on Linux Kernel 3.0x or upper version.    //
+//																	  //
+//					Developed by D.C. LEE in H.U.F.S. May, 2013		  //
+//																	  //
+////////////////////////////////////////////////////////////////////////
+
+//#include <mach/map.h>
+
+#define S3C_ADDR_BASE				0xF6000000
+
+#define S3C_ADDR(x)					((void __iomem __force*)S3C_ADDR_BASE + (x)
+#define S3C_ADDR(x)					(S3C_ADDR_BASE + (x))
+
+#define S5P_VA_CMU					S3C_ADDR(0x02100000)
+
+#define EXYNOS_CLKREG(x)			(S5P_VA_CMU + (x))
+
+#define EXYNOS4_CLKGATE_IP_LEFTBUS	EXYNOS_CLKREG(0x04800)
+#define EXYNOS4_CLKGATE_IP_RIGHTBUS	EXYNOS_CLKREG(0x08800)
+#define EXYNOS4_CLKGATE_IP_CAM		EXYNOS_CLKREG(0x0C920)
+#define EXYNOS4_CLKGATE_IP_TV		EXYNOS_CLKREG(0x0C924)
+#define EXYNOS4_CLKGATE_IP_MFC		EXYNOS_CLKREG(0x0C928)
+#define EXYNOS4_CLKGATE_IP_G3D		EXYNOS_CLKREG(0x0C92C)
+#define EXYNOS4_CLKGATE_IP_IMAGE	EXYNOS_CLKREG(0x0C930)
+#define EXYNOS4_CLKGATE_IP_LCD0		EXYNOS_CLKREG(0x0C934)
+#define EXYNOS4_CLKGATE_IP_LCD1		EXYNOS_CLKREG(0x0C938)
+#define EXYNOS4_CLKGATE_IP_FSYS		EXYNOS_CLKREG(0x0C940)
+#define EXYNOS4_CLKGATE_IP_GPS		EXYNOS_CLKREG(0x0C94C)
+#define EXYNOS4_CLKGATE_IP_PERIL	EXYNOS_CLKREG(0x0C950)
+#define EXYNOS4_CLKGATE_IP_PERIR	EXYNOS_CLKREG(0x0C960)
+#define EXYNOS4_CLKGATE_IP_DMC		EXYNOS_CLKREG(0x10900)
+#define EXYNOS4_CLKGATE_IP_CPU		EXYNOS_CLKREG(0x14900)
+
+#define EXYNOS4_CLKGATE_SCLKCAM		EXYNOS_CLKREG(0x0C820)
+#define EXYNOS4_CLKGATE_SCLKCPU		EXYNOS_CLKREG(0x14800)
+
+#define EXYNOS4_CLKGATE_BLOCK		EXYNOS_CLKREG(0x0C970)
+
+
+/* CLK_GATE_IP_IMAGE */
+#define EXYNOS4_CLKGATE_IP_IMAGE_MDMA		(0x1 << 2)
+#define EXYNOS4_CLKGATE_IP_IMAGE_SMMUMDMA	(0x1 << 5)
+#define EXYNOS4_CLKGATE_IP_IMAGE_QEMDMA		(0x1 << 8)
+
+/*  CLK_GATE_IP_FSYS */
+#define EXYNOS4_CLKGATE_IP_FSYS_PDMA0		(0x1 << 0)
+#define EXYNOS4_CLKGATE_IP_FSYS_PDMA1		(0x1 << 1)
+
+/*  CLK_GATE_IP_PERIL */
+#define EXYNOS4_CLKGATE_IP_PERIL_I2C0_7		(0xff << 6)
