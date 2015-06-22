@@ -1,11 +1,3 @@
-///////////////////////////////////////////////////////////////////////////
-//									 //
-//	This Driver is operated on Linux Kernel 3.0x or upper version.	 //
-//									 //
-//		Developed by D.C. LEE in H.U.F.S. May, 2013		 //
-//									 //
-///////////////////////////////////////////////////////////////////////////
-
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/kernel.h>
